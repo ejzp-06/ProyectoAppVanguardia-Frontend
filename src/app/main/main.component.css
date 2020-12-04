@@ -1,0 +1,11 @@
+.toolbar {
+    background-color: darkcyan; 
+    height: 50%; 
+    width: 100%; 
+}
+
+.toolbar-img{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}

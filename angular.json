@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ProyectoAppVanguardia-Frontend"
+    }
+  },
+  "defaultProject": "ProyectoAppVanguardia-Frontend",
+  "cli": {
+    "analytics": "d6ff3988-685e-44b9-bf0c-b64f07865845"
+  }
 }
