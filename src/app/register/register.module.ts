@@ -8,15 +8,7 @@ import { RegisterComponent } from './register.component';
 import { MatButtonModule } from '@angular/material/button'
 import { MatCardModule } from '@angular/material/card'
 import { MatFormFieldModule } from '@angular/material/form-field'
-import { MatSelectModule } from '@angular/material/select'
 import { MatInputModule } from '@angular/material/input'
-import { MatTableModule } from '@angular/material/table'
-import { MatPaginatorModule } from '@angular/material/paginator'
-import { MatCheckboxModule } from '@angular/material/checkbox'
-import { MatExpansionModule } from '@angular/material/expansion'
-import { MatIconModule } from '@angular/material/icon'
-import { MatSortModule } from '@angular/material/sort'; 
-import { MatDialogModule} from '@angular/material/dialog';
 
 
 const routes: Routes = [
@@ -41,21 +33,13 @@ const routes: Routes = [
     MatCardModule,
     MatButtonModule,
     MatInputModule,
-    MatIconModule,
-    MatExpansionModule,
-    MatSelectModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule,
     MatFormFieldModule,
-    MatCheckboxModule,
-    MatDialogModule
+  ],
+  exports: [
+    RegisterModule
   ],
   declarations: [
     RegisterComponent,
-  ],
-  providers: [
-    
   ]
 })
 

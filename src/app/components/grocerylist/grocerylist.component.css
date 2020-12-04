@@ -41,12 +41,10 @@
     height: 16cm;
 }
 
-.sub-div1 {
-    color: black;
-}
 
 th,td {
-    width: 25%;
+    width: 5%;
+    text-align: left;
 }
 
 .sub-card {
@@ -55,3 +53,7 @@ th,td {
     margin-left: auto;
     text-align: center;
 } 
+
+.table {
+    width: 100%;
+}

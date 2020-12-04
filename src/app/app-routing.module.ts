@@ -5,9 +5,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
 //modules
-import { GroceryListModule } from './components/grocerylist/grocerylist.module'
-import { MyRemindersModule} from './components/my-reminders/my-reminders.module'
-
+import { GroceryListModule } from './components/grocerylist/grocerylist.module';
+import { MyRemindersModule} from './components/my-reminders/my-reminders.module';
+import { MyRecipesModule } from './components/myrecipes/myrecipes.module';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent},
@@ -16,7 +16,8 @@ const routes: Routes = [
     path: '', component: MainComponent,
     children: [
        {path: 'grocerylist', loadChildren: ()=> GroceryListModule},
-       {path: 'reminder', loadChildren: ()=> MyRemindersModule}
+       {path: 'reminder', loadChildren: ()=> MyRemindersModule},
+       {path: 'recipes', loadChildren: ()=> MyRecipesModule},
     ]
   }
 ];

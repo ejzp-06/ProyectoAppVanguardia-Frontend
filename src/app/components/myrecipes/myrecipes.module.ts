@@ -1,26 +1,29 @@
-import { NgModule  } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from './login.component';
+import { MyrecipesComponent } from './myrecipes.component';
 
 //angular material
 import { MatButtonModule } from '@angular/material/button'
 import { MatCardModule } from '@angular/material/card'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input'
+import { MatTableModule } from '@angular/material/table'
+import { MatPaginatorModule } from '@angular/material/paginator'
+import { MatSortModule } from '@angular/material/sort'; 
 
-const routes: Routes = [ 
+const routes: Routes = [
   {
     path: '',
     data: {
-      title: 'Login',
+      title: 'MyRecipes',
       urls: [
-        { title: 'Login', url: '/login' },
-        { title: 'Login' }
+        { title: 'MyRecipes', url: '/recipes' },
+        { title: 'MyRecipes' }
       ]
     },
-    component: LoginComponent 
+    component: MyrecipesComponent 
   }
 ];
 
@@ -32,13 +35,16 @@ const routes: Routes = [
     MatCardModule,
     MatButtonModule,
     MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
     MatFormFieldModule,
   ],
   declarations: [
-    LoginComponent,
+    MyrecipesComponent,
   ],
   providers: [
   ]
 })
 
-export class LoginModule { }
+export class MyRecipesModule { }

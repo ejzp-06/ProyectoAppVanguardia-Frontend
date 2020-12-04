@@ -1,7 +1,7 @@
-import { Recepy } from './recepy';
+import { Recipe } from './recipe';
 
 describe('Recepy', () => {
   it('should create an instance', () => {
-    expect(new Recepy()).toBeTruthy();
+    expect(new Recipe()).toBeTruthy();
   });
 });

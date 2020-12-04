@@ -1,22 +1,22 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 
 //modelos
-import { List } from '../../../models/list/list'
+import { Recipe } from '../../../models/recipes/recipe'
 
-//material
+//angular material
 import { MatPaginator } from '@angular/material/paginator'
 import { MatSort } from '@angular/material/sort'
 import { MatTableDataSource } from '@angular/material/table'
 
 @Component({
-  selector: 'app-grocerylist',
-  templateUrl: './grocerylist.component.html',
-  styleUrls: ['./grocerylist.component.css']
+  selector: 'app-myrecipes',
+  templateUrl: './myrecipes.component.html',
+  styleUrls: ['./myrecipes.component.css']
 })
-export class GrocerylistComponent implements OnInit {
+export class MyrecipesComponent implements OnInit {
 
-  displayedColumns: string[] = ['position', 'name', 'description', 'actions'];
-  dataSource: MatTableDataSource<List>;
+  displayedColumns: string[] = ['position', 'name', 'description', 'fecha'];
+  dataSource: MatTableDataSource<Recipe>;
   list: null;
   
   constructor() {
