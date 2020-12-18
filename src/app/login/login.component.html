@@ -20,15 +20,15 @@
               <form>
                   <br>
                   <mat-form-field class="long-form-field">
-                      <input matInput placeholder="Nombre completo">
+                      <input matInput placeholder="Usuario" [(ngModel)]="username">
                   </mat-form-field>
                   <br>
                   <mat-form-field class="long-form-field">
-                      <input matInput placeholder="Usuario">
+                      <input matInput placeholder="Contraseña" [(ngModel)]="password">
                   </mat-form-field>
                   <br>
                   <br>
-                  <a routerLink="/">Iniciar Sesión</a>
+                  <a (click)="validateLogin()" routerLink="/">Iniciar Sesión</a>
                   <br>
                   <br>
                   <a routerLink="/register">¿No tienes una cuenta? Registrate</a>

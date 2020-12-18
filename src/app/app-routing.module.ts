@@ -8,6 +8,8 @@ import { RegisterComponent } from './register/register.component';
 import { GroceryListModule } from './components/grocerylist/grocerylist.module';
 import { MyRemindersModule} from './components/my-reminders/my-reminders.module';
 import { MyRecipesModule } from './components/myrecipes/myrecipes.module';
+import { AddGroceryListModule } from './components/grocerylist/add-grocery-list/add-grocery-list.module';
+import { AddRemindersModule } from './components/my-reminders/add-reminder/add-reminder.module';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent},
@@ -18,6 +20,8 @@ const routes: Routes = [
        {path: 'grocerylist', loadChildren: ()=> GroceryListModule},
        {path: 'reminder', loadChildren: ()=> MyRemindersModule},
        {path: 'recipes', loadChildren: ()=> MyRecipesModule},
+       {path: 'addGrocerylist', loadChildren: ()=> AddGroceryListModule},
+       {path: 'addReminder', loadChildren: ()=> AddRemindersModule}
     ]
   }
 ];

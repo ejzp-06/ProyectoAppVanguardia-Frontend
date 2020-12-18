@@ -14,8 +14,19 @@
     height: 2cm;
 }
 
+.table{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .long-form-field {
     width: 100%;
+    color: black;
+}
+
+.mid-form-field{
+    width: 50%;
     color: black;
 }
 
@@ -26,14 +37,21 @@
     text-align: center;
 }
 
+.sub-div{
+    background-color: darkcyan;
+    height: 13cm;
+    width: 14cm;
+    margin-left: auto;
+    margin-right: auto;
+    color: whitesmoke;
+    text-align: center;
+}
+
 .main-div{
     background-color: whitesmoke;
     height: 16cm;
 }
 
-.sub-div1 {
-    color: black;
-}
 
 th,td {
     width: 5%;
@@ -46,10 +64,6 @@ th,td {
     margin-left: auto;
     text-align: center;
 } 
-
-.table {
-    width: 100%;
-}
 
 .icon-container{
     margin-left: 90%;

@@ -7,6 +7,7 @@ import { Recipe } from '../../../models/recipes/recipe'
 import { MatPaginator } from '@angular/material/paginator'
 import { MatSort } from '@angular/material/sort'
 import { MatTableDataSource } from '@angular/material/table'
+import { RecipesService } from 'src/services/recipes/recipes.service';
 
 @Component({
   selector: 'app-myrecipes',
@@ -17,12 +18,13 @@ export class MyrecipesComponent implements OnInit {
 
   displayedColumns: string[] = ['position', 'name', 'description', 'fecha'];
   dataSource: MatTableDataSource<Recipe>;
-  list: null;
+  list: Recipe[];
   
   constructor() {
     this.dataSource = new MatTableDataSource(this.list);
   }
 
+  //data display
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 

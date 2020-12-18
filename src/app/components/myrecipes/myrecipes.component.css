@@ -50,3 +50,11 @@ th,td {
 .table {
     width: 100%;
 }
+
+.icon-container{
+    margin-left: 90%;
+}
+
+.icon {
+    color: black;
+}
